@@ -66,3 +66,6 @@ const link = document.querySelector("a");
 //   console.log(atribute.value);
 // });
 // console.log(atributesNode);
+
+const text = document.querySelector("#text");
+text.setAttribute("style", "font-size: 20px; background-color: yellow;");
