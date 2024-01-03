@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./vendors/normalize.css" />
+		<!--adding reset style file for all browsers-->
+		<link rel="stylesheet" href="./styles.css" />
+		<script type="module" src="./script.js"></script>
+		<title>Mini Social Network</title>
+	</head>
+	<body>
+		<header class="header">
+			<p class="title">ROBOFRIENDS</p>
+			<label for="searchBox" class="searchbox__container"
+				><input
+					type="text"
+					class="header__search-box"
+					name="searchBox"
+					placeholder="Type to search an a Robot"
+			/></label>
+		</header>
+		<main class="container">
+			<ul class="users-list"></ul>
+		</main>
+		<template id="user-profile__template">
+			<li class="user-profile">
+				<div class="user__icon-container">
+					<img src="" alt="an avatar of the user" class="user__icon" />
+				</div>
+				<h2 class="user__name"></h2>
+				<p class="user__email"></p>
+			</li>
+		</template>
+	</body>
+</html>
