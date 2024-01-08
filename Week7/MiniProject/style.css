@@ -1,0 +1,78 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  color: #ffa500;
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding-top: 20px;
+}
+
+.star-wars-intro {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85%;
+}
+
+.info-panel {
+  border: 3px solid #ffa500;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  min-height: 240px;
+  margin-bottom: 20px;
+}
+
+.fetch-button {
+  background-color: #ffa500;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.fetch-button:hover {
+  background-color: #ffca00;
+}
+
+.hidden {
+  display: none;
+}
+
+.video-wrapper {
+  position: absolute;
+  max-height: 100%;
+  max-width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#star-background {
+  max-height: 100vw;
+  overflow: hidden;
+}
+
+.container-starwars-image {
+  max-width: 40%;
+}
+
+.starwars-text-image {
+  width: 100%;
+}
