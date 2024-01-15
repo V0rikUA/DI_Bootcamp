@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emoji Quiz Game</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <script type="module" type="text/javascript" src="./main.js"></script>
+  </head>
+  <body>
+    <div class="quiz-container container">
+      <h1>Emoji Quiz</h1>
+      <!--                     GAME WINDOW                                  -->
+      <div class="emoji-question hidden" id="emoji-question">
+        <div class="emoji" id="emoji"></div>
+        <div id="user-score">0</div>
+        <input
+          type="text"
+          name="user-answer"
+          id="user-answer"
+          placeholder="Enter emoji name"
+        />
+        <button id="check-answer">Check</button>
+        <button id="hint-button">Show Hint</button>
+        <div class="hint-container hidden" id="hint-container">
+          <p id="hint-text">[Hint text goes here]</p>
+        </div>
+      </div>
+      <!--                    LOG IN WINDOW                                     -->
+      <div class="start-game" id="start-game">
+        <label for="user-name-input"
+          >Enter your name:<br /><input id="user-name-input" type="text"
+        /></label>
+        <button id="start-game__button" type="button">Start Game!</button>
+      </div>
+      <div class="leaderboard">
+        <h2>Leaderboard</h2>
+        <ul id="leaderboard-list" type="1">
+          <!-- Leaderboard entries will be added here dynamically -->
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
