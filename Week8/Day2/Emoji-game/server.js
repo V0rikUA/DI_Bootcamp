@@ -25,7 +25,7 @@ app.get("/emojis", (req, res) => {
   res.json({ shuffleEmojis, randomEmoji });
 });
 
-app.post("/e,ogis", (req, res) => {
+app.post("/emojis", (req, res) => {
   const { name, guess } = req.body;
   if (name == guess) return res.json({ message: "Correct" });
   res.json({ message: "Not Correct" });
