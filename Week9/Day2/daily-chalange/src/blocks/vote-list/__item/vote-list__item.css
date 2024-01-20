@@ -1,0 +1,16 @@
+.vote-list__item {
+  width: 20%;
+  height: auto;
+  margin: 0;
+  padding: 20px;
+  background-color: rgb(243, 219, 140);
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid black;
+}
+
+.vote-list__item:not(:first-child) {
+  margin-top: 10px;
+}
