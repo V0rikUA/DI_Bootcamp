@@ -1,0 +1,23 @@
+/* Navbar styles */
+#navbar {
+  background-color: #333; /* Background color for the Navbar */
+  color: white; /* Text color for the Navbar */
+  padding: 10px; /* Padding to create some space around content */
+  display: flex; /* Display items horizontally */
+  align-items: center; /* Vertically center items */
+  justify-content: space-between; /* Space between items */
+}
+
+/* User welcome message styles */
+.user-welcome {
+  display: flex; /* Display items horizontally */
+  align-items: center; /* Vertically center items */
+  gap: 10px; /* Spacing between elements */
+}
+
+/* Profile picture styles */
+.user-welcome img {
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  border-radius: 50%; /* Rounded profile picture */
+}
