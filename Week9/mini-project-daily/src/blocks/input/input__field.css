@@ -1,0 +1,9 @@
+.input__field {
+  border-radius: 15px;
+  font-size: 40px;
+  width: 150px;
+}
+
+.input__field:first-child {
+  margin-right: 30px;
+}

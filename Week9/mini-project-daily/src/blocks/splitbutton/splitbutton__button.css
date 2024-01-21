@@ -1,0 +1,9 @@
+.splitbutton__button {
+  margin: 0;
+  height: 52px;
+  width: 5rem;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-right: 2px solid black;
+}

@@ -1,0 +1,9 @@
+.main {
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
