@@ -1,0 +1,18 @@
+.searchbar-container {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  .searchbar-container {
+    flex-direction: column;
+    height: 100px;
+    gap: 10px;
+  }
+}

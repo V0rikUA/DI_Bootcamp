@@ -1,0 +1,15 @@
+.book-list__item {
+  width: 160px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 2px solid grey;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+p {
+  margin: 5px 0 0 0;
+}
