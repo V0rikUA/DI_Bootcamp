@@ -1,5 +1,4 @@
 import Book from "./Book";
-import cover from "../assets/content.jpg";
 import "../blocks/books-list/book-description.css";
 import "../blocks/books-list/book-details.css";
 import "../blocks/books-list/book-title.css";

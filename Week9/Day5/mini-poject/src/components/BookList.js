@@ -1,4 +1,3 @@
-import testData from "../utils/testData";
 import BookCard from "./BookCard";
 import "../blocks/books-list/book-list.css";
 import "../blocks/books-list/book-list__item.css";

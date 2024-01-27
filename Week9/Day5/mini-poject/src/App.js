@@ -45,7 +45,8 @@ function App() {
   };
 
   useEffect(() => {
-    setBooksArray([...booksArray.sort(sortAlgoritms[sortOrder])]);
+    if (booksArray.length > 0)
+      setBooksArray([...booksArray.sort(sortAlgoritms[sortOrder])]);
   }, [sortOrder]);
 
   return (
