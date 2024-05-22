@@ -185,11 +185,9 @@ function totalVacationCost() {
 }
 
 /*                           Exercise 5                  */
-// Retrieve the div and console.log it
 const containerDiv = document.getElementById("container");
 console.log(containerDiv);
 
-// Change the name “Pete” to “Richard”
 const listItems = document.querySelectorAll(".list li");
 listItems.forEach((item) => {
   if (item.textContent === "Pete") {
@@ -197,7 +195,6 @@ listItems.forEach((item) => {
   }
 });
 
-// Delete the second <li> of the second <ul>
 const secondUl = document.querySelector(".list:nth-child(2)");
 if (secondUl) {
   const secondLi = secondUl.querySelector("li:nth-child(2)");
@@ -206,46 +203,38 @@ if (secondUl) {
   }
 }
 
-// Change the name of the first <li> of each <ul> to your name
 const uls = document.querySelectorAll(".list");
 uls.forEach((ul) => {
   const firstLi = ul.querySelector("li");
   if (firstLi) {
-    firstLi.textContent = "Your Name"; // Replace "Your Name" with your actual name
+    firstLi.textContent = "Dima";
   }
 });
 
-// Add a class called student_list to both of the <ul>'s
 uls.forEach((ul) => {
   ul.classList.add("student_list");
 });
 
-// Add the classes university and attendance to the first <ul>
 const firstUl = document.querySelector(".list:first-child");
 if (firstUl) {
   firstUl.classList.add("university", "attendance");
 }
 
-// Add a “light blue” background color and some padding to the <div>
 containerDiv.style.backgroundColor = "lightblue";
 containerDiv.style.padding = "10px";
 
-// Do not display the <li> that contains the text node “Dan”
 const danLi = document.querySelector(".list:first-child li:last-child");
 if (danLi) {
   danLi.style.display = "none";
 }
 
-// Add a border to the <li> that contains the text node “Richard”
 const richardLi = document.querySelector(".list li:nth-child(2)");
 if (richardLi) {
   richardLi.style.border = "1px solid black";
 }
 
-// Change the font size of the whole body
-document.body.style.fontSize = "16px"; // Adjust the font size as needed
+document.body.style.fontSize = "16px"; 
 
-// Bonus: Check the background color and alert "Hello x and y" if it's "lightblue"
 if (containerDiv.style.backgroundColor === "lightblue") {
   const users = document.querySelectorAll(".list li");
   const userNames = [];
@@ -256,27 +245,53 @@ if (containerDiv.style.backgroundColor === "lightblue") {
 }
 
 /*                           Exercise 6                  */
-// Change the value of the id attribute from navBar to socialNetworkNavigation
 const navBar = document.getElementById("navBar");
 navBar.setAttribute("id", "socialNetworkNavigation");
 
-// Create a new <li> tag
 const newLi = document.createElement("li");
 
-// Create a new text node with "Logout"
 const textNode = document.createTextNode("Logout");
 
-// Append the text node to the newly created <li> element
 newLi.appendChild(textNode);
 
-// Append the updated <li> element to the <ul> using appendChild
 const ul = navBar.querySelector("ul");
 ul.appendChild(newLi);
 
-// Retrieve the first and last <li> elements
 const firstLi = ul.firstElementChild;
 const lastLi = ul.lastElementChild;
 
-// Display the text of each link using textContent
 console.log("First link: " + firstLi.textContent);
 console.log("Last link: " + lastLi.textContent);
+
+/*                           Exercise 7                  */
+const allBooks = [
+  {
+    title: "To Kill a Mockingbird",
+    author: "Harper Lee",
+    image: "https://wizkids.co.il/cdn/shop/products/f8ab4f8ee7031370db441571a0552254_x700.jpg?v=1514214126",
+    alreadyRead: true
+  },
+  {
+    title: "1984",
+    author: "George Orwell",
+    image: "https://www.bookerworm.com/images/1984.jpg",
+    alreadyRead: false
+  }
+];
+
+function displayBooks() {
+  const listBooksSection = document.querySelector('.listBooks');
+
+  allBooks.forEach(book => {
+    const bookDiv = document.createElement('div');
+
+    bookDiv.innerHTML = `
+      <h3 style="color: ${book.alreadyRead ? 'red' : 'black'};">${book.title} written by ${book.author}</h3>
+      <img src="${book.image}" alt="${book.title}" style="width: 100px;">
+    `;
+
+    listBooksSection.appendChild(bookDiv);
+  });
+}
+
+displayBooks();
