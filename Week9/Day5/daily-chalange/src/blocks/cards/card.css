@@ -1,0 +1,15 @@
+.card {
+  margin: 0 auto;
+  padding: 0;
+  width: 200px;
+  height: 240px;
+  list-style: none;
+  border: 2px red solid;
+  border-radius: 7px;
+  box-shadow: 80px black;
+}
+
+p {
+  margin: auto;
+  padding: 0;
+}
